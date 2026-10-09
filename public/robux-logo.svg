@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" fill="none">
+  <defs>
+    <radialGradient id="robloxGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#00A2FF" stop-opacity="0.5"/>
+      <stop offset="60%" stop-color="#0066FF" stop-opacity="0.15"/>
+      <stop offset="100%" stop-color="#0066FF" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <!-- Halo glow bleu radial autour du losange -->
+  <circle cx="60" cy="60" r="55" fill="url(#robloxGlow)"/>
+
+  <!-- Losange blanc (carré incliné ~42° comme le logo officiel Roblox) -->
+  <g transform="rotate(42 60 60)">
+    <rect
+      x="22" y="22" width="76" height="76"
+      rx="12"
+      fill="#ffffff"
+    />
+    <!-- Liseré bleu subtil sur les bords -->
+    <rect
+      x="22" y="22" width="76" height="76"
+      rx="12"
+      fill="none"
+      stroke="#00A2FF"
+      stroke-width="0.4"
+      stroke-opacity="0.35"
+    />
+  </g>
+</svg>

@@ -1,0 +1,17 @@
+# Render — https://render.com
+# Importe ce repo, Render lit ce fichier automatiquement
+
+services:
+  - type: web
+    name: robux-plus
+    runtime: node
+    plan: free
+    buildCommand: npm install --legacy-peer-deps && npm run build
+    startCommand: npm run start
+    envVars:
+      - key: NODE_VERSION
+        value: 20.0.0
+      - key: DISCORD_WEBHOOK_URL
+        sync: false
+    healthCheckPath: /
+    autoDeploy: true
